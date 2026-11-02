@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tumishomokgotho.github.io/Sky-High-Bakery/sitemap.xml
