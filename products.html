@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/myfirststyle.css">
-    <title>Document</title>
+    <meta name="description"
+        content="Browse the sample baked goods collection at Sky High Bakery in Pretoria. Search and sort our fictional menu.">
+    <meta name="keywords" content="Sky High Bakery products, bakery cookies, brownies, cupcakes, Pretoria">
+    <meta name="author" content="Sky High Bakery">
+    <title>Products | Sky High Bakery</title>
+    <link rel="stylesheet" href="css/myfirststyle.css">
+    <script src="js_assets/main.js" defer></script>
 </head>
+
 <body>
-    <main>
-    <h2>Our Products</h2>
-     
-    <nav>
+    <header class="site-header"><a class="brand" href="index.html"><img src="_images/Welcome to (1).png"
+                alt="Sky High Bakery logo"><span>Sky High Bakery</span></a>
+        <p class="tagline">We put the bake in bakery. Come for the treats, stay for the vibes.</p>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="enquires.html">Enquiries</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a aria-current="page" href="products.html">Products</a></li>
             </ul>
         </nav>
-
-    <div class="under-construction">
-        <img src="_images/construction.jpg" alt="Products page under construction">
-
-        <h2>Products Coming Soon!</h2>
-
-        <p>
-            We're still baking things up behind the scenes.
-            Our product menu is currently under construction,
-            but we'll be back with some tasty treats soon!
-        </p>
-
-        <p>
-            Check back soon for our full range of Sky High Bakery treats.
-        </p>
+    </header>
+    <main class="section-wrap">
+        <section class="page-heading">
+            <p class="eyebrow">The sample menu</p>
+            <h1>Our Products</h1>
+            <p>Search or sort our example bakery menu. Details and prices are fictional and included for this learning
+                project.</p>
+        </section>
+        <section class="product-tools" aria-label="Product search and sorting"><label for="productSearch">Search
+                products</label><input type="search" id="productSearch" placeholder="Try cookies or cupcakes"
+                aria-describedby="productCount"><label for="productSort">Sort by</label><select id="productSort">
+                <option value="name">Name (A–Z)</option>
+                <option value="price-low">Price: low to high</option>
+                <option value="price-high">Price: high to low</option>
+            </select>
+            <p id="productCount" aria-live="polite">Showing 4 sample products</p>
+        </section>
+        <section class="product-grid" id="productList" aria-label="Bakery products"></section>
+        <p class="empty-message" id="noProducts" hidden>No products match your search. Try another word.</p>
+        <section class="notice"><strong>Sample information only</strong>
+            <p>Prices and availability are not live. Please use the enquiry form for the assignment’s demonstration
+                response.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© <span class="current-year">2026</span> Sky High Bakery · Pretoria, South Africa</p>
+        <p><a href="contact.html">Get in touch</a> · <a href="sitemap.xml">Sitemap</a></p>
+    </footer>
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lightbox-close" type="button" aria-label="Close image preview">×</button><img src="" alt=""
+            id="lightboxImage">
+        <p id="lightboxCaption"></p>
     </div>
-</main>
 </body>
+
 </html>

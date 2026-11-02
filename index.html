@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Sky High Bakery, a fictional Pretoria bakery with creative treats, warm service and good vibes.">
+    <meta name="keywords" content="Sky High Bakery, Pretoria bakery, baked treats, cookies, cupcakes, brownies">
+    <meta name="author" content="Sky High Bakery">
+    <meta name="theme-color" content="#ffdbac">
+    <title>Sky High Bakery | Fresh Treats & Good Vibes</title>
     <link rel="stylesheet" href="css/myfirststyle.css">
-    <title>Document</title>
+    <script src="js_assets/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="_images/Welcome to (1).png" alt="Sky High Bakery Logo">
-    <h1> Sky High Bakery</h1>
-    <h2>We put the bake in bakery. Come for the treats, stay for the vibes.</h2>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="enquires.html">Enquires</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="products.html">Products</a></li>
-        </ul>
-    </nav>
-  </header>  
-  <main>
-    <h2>Where every bite takes you a little higher.
-Freshly baked treats, good vibes, and absolutely no boring brownies. 🍪✨</h2>
-<div class="container">
-
-        <div>
-            <img src="_images/cookies.jpg" alt="Cannabis cookies">
-            <h3>Special Brownies</h3>
+<header class="site-header">
+    <a class="brand" href="index.html"><img src="_images/Welcome to (1).png" alt="Sky High Bakery logo"><span>Sky High Bakery</span></a>
+    <p class="tagline">We put the bake in bakery. Come for the treats, stay for the vibes.</p>
+    <nav aria-label="Main navigation"><ul>
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <li><a href="enquires.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul></nav>
+</header>
+<main>
+    <section class="hero">
+        <p class="eyebrow">A little sweetness, a lot of personality</p>
+        <h1>Where every bite takes you a little higher.</h1>
+        <p>Freshly baked treats, good vibes, and absolutely no boring brownies. 🍪✨</p>
+        <a class="button-link" href="products.html">Explore the treats</a>
+    </section>
+    <section class="section-wrap" aria-labelledby="featured-title">
+        <h2 id="featured-title">A peek at our bakery</h2>
+        <p class="section-intro">Our fictional bakery is all about creative bakes, thoughtful presentation and making an ordinary day feel like a treat.</p>
+        <div class="container gallery" id="homeGallery">
+            <button class="gallery-card" type="button" data-lightbox="_images/cookies.jpg" data-caption="Cookies from Sky High Bakery"><img src="_images/cookies.jpg" alt="Freshly baked cookies"><span>Cookies</span></button>
+            <button class="gallery-card" type="button" data-lightbox="_images/croissant.jpg" data-caption="A golden bakery croissant"><img src="_images/croissant.jpg" alt="Golden croissant"><span>Croissants</span></button>
+            <button class="gallery-card" type="button" data-lightbox="_images/cupcakes.jpg" data-caption="Decorated bakery cupcakes"><img src="_images/cupcakes.jpg" alt="Decorated cupcakes"><span>Cupcakes</span></button>
         </div>
-
-        <div>
-            <img src="_images/croissant.jpg" alt="Cannabis croissant">
-            <h3>Special Cookies</h3>
-        </div>
-
-        <div>
-            <img src="_images/cupcakes.jpg" alt="Cannabis cupcakes">
-            <h3>Special Cupcakes</h3>
-        </div>
-
-    </div>
-  </main>
+    </section>
+    <section class="section-wrap split-section">
+        <div><h2>Good things are always baking</h2><p>Take a look around, learn a little about our story, or send us a message. We’re happy to help you find the right treat for your occasion.</p><a class="text-link" href="enquires.html">Make an enquiry →</a></div>
+        <div class="notice"><strong>For this student project</strong><p>Sky High Bakery is a fictional business. Product details, prices and availability shown on this website are sample information only.</p></div>
+    </section>
+</main>
+<footer><p>© <span class="current-year">2026</span> Sky High Bakery · Pretoria, South Africa</p><p><a href="contact.html">Get in touch</a> · <a href="sitemap.xml">Sitemap</a></p></footer>
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+    <img src="" alt="" id="lightboxImage"><p id="lightboxCaption"></p>
+</div>
 </body>
 </html>

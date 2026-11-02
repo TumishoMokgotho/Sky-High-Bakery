@@ -1,75 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/myfirststyle.css">
-    <title>Document</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Sky High Bakery and send an enquiry about sample bakery services and availability.">
+    <meta name="keywords" content="Sky High Bakery, bakery enquiry, Pretoria bakery, baked treats">
+    <meta name="author" content="Sky High Bakery"><title>Enquiries | Sky High Bakery</title>
+    <link rel="stylesheet" href="css/myfirststyle.css"><script src="js_assets/main.js" defer></script>
 </head>
 <body>
-     </ol>
-</nav>
-    </header>
-    <main>  
-        <h2>Get to know Sky High</h2> 
-        <p> Want to know more about what makes Sky High Bakery different? Take a look at what we are all about.  
-            </p>
-            <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="enquires.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="products.html">Products</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div>
-               <img src="_images/cookies.jpg" alt="Cannabis cookies">
-                <p>
-     <h3>Our Craft</h3>
-
-At Sky High Bakery, our team is specially trained in the art of combining delicious baked goods with cannabis to create something truly unique. Every product is carefully prepared with attention to quality, consistency, and presentation, so our customers can enjoy a treat they can feel good about.
-
-For us, it is more than just baking. It is about creating a moment to slow down, relax, and treat yourself for once. From the first mix to the final bite, we put care into every product and take our craft to another level.
-
-
-
-                </p>
-            </div>
-            <div>
-                <p>
-       <h3>Our Commitment</h3>
-       <img src="_images/croissant.jpg" alt="Cannabis croissant">
-
-At Sky High Bakery, we don't believe in sending anyone home disappointed. Our mission is simple: great taste, good vibes, and a smile on your face after every visit. 
-
-We put serious effort into making every treat delicious, consistent, and worth coming back for. Whether you're here for a little pick-me-up or just an excuse to treat yourself, we've got you covered.
-
-Come hungry, leave happy, and maybe don't make any important decisions until after dessert.
-
-                </p>
-            </div>
-            <div>
-                <p>
-     <h4>Your Wellbeing</h4>
-     <img src="_images/cupcakes.jpg" alt="Cannabis cupcakes">
-
-At Sky High Bakery, we believe everyone deserves a chance to relax, switch off, and enjoy a little treat.S Our cannabis-infused baked goods are made to give you a chance to slow down and enjoy the moment after a long day.
-
-Whether you're feeling stressed, need some time to yourself, or just want something tasty to enjoy, we're here to help you take a break from the everyday chaos.
-
-Life can be stressful enough, so why not sit back, relax, and enjoy a good treat? Just remember, we're bakers, not therapists.
-
-                </p>
-            </div>
-        </div>
-    </main>
-<footer>
-
-</footer>
-</body>
-
-</html>
-    
-</body>
-</html>
+<header class="site-header"><a class="brand" href="index.html"><img src="_images/Welcome to (1).png" alt="Sky High Bakery logo"><span>Sky High Bakery</span></a>
+<p class="tagline">We put the bake in bakery. Come for the treats, stay for the vibes.</p>
+<nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a aria-current="page" href="enquires.html">Enquiries</a></li><li><a href="contact.html">Contact</a></li><li><a href="products.html">Products</a></li></ul></nav></header>
+<main class="section-wrap">
+    <section class="page-heading"><p class="eyebrow">Get to know Sky High</p><h1>Our craft, our commitment</h1><p>Want to know what makes Sky High Bakery different? Explore our story and send an enquiry below.</p></section>
+    <section class="container story-cards">
+        <article class="story-card"><img src="_images/cookies.jpg" alt="Cookies displayed at a bakery"><h2>Our Craft</h2><p>At Sky High Bakery, creativity meets careful baking. Every treat is prepared with attention to quality, consistency and presentation. We believe a little care can turn a simple snack into a memorable moment.</p></article>
+        <article class="story-card"><img src="_images/croissant.jpg" alt="Fresh croissant"><h2>Our Commitment</h2><p>Our mission is simple: great taste, friendly service and a smile after every visit. We put effort into making every bake delicious and worth coming back for.</p></article>
+        <article class="story-card"><img src="_images/cupcakes.jpg" alt="Decorated cupcakes"><h2>Your Wellbeing</h2><p>We want visitors to feel welcome and informed. Please check ingredients and dietary information before choosing a treat. Our fictional website does not provide medical advice or make health claims.</p></article>
+    </section>
+    <section class="form-section" aria-labelledby="enquiry-title"><h2 id="enquiry-title">Make an enquiry</h2><p>Tell us what you’re interested in. This demonstration form checks your details and displays a sample response; it does not send a real order.</p>
+    <form id="enquiryForm" class="site-form" action="#enquiry-response" method="get">
+        <label for="enquiryName">Your name</label><input id="enquiryName" name="name" type="text" minlength="2" maxlength="60" autocomplete="name" required>
+        <label for="enquiryEmail">Email address</label><input id="enquiryEmail" name="email" type="email" autocomplete="email" required>
+        <label for="enquiryType">What is your enquiry about?</label><select id="enquiryType" name="enquiryType" required><option value="">Choose an option</option><option value="product">Product information</option><option value="event">A bakery event or catering</option><option value="volunteer">Volunteering or sponsorship</option><option value="other">Something else</option></select>
+        <label for="enquiryDate">Preferred date (optional)</label><input id="enquiryDate" name="date" type="date">
+        <label for="enquiryDetails">Tell us a little more</label><textarea id="enquiryDetails" name="details" rows="5" minlength="10" maxlength="600" placeholder="What would you like to know?" required></textarea>
+        <button class="button-link" type="submit">Check sample response</button><p class="form-message" id="enquiryResponse" aria-live="polite"></p>
+    </form></section>
+</main>
+<footer><p>© <span class="current-year">2026</span> Sky High Bakery · Pretoria, South Africa</p><p><a href="contact.html">Get in touch</a> · <a href="sitemap.xml">Sitemap</a></p></footer>
+</body></html>

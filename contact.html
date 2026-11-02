@@ -1,81 +1,91 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description"
+        content="Contact Sky High Bakery in Pretoria with a general message, question or feedback.">
+    <meta name="keywords" content="contact Sky High Bakery, Pretoria bakery contact, bakery feedback">
+    <meta name="author" content="Sky High Bakery">
+    <title>Contact | Sky High Bakery</title>
     <link rel="stylesheet" href="css/myfirststyle.css">
-
-    <title>Contact Sky High Bakery</title>
+    <script src="js_assets/main.js" defer></script>
 </head>
 
 <body>
-
-    <header>
-
-        <img src="_images/Welcome to (1).png" alt="Logo">
-
-        <h1>Sky High Bakery</h1>
-
-        <nav>
+    <header class="site-header"><a class="brand" href="index.html"><img src="_images/Welcome to (1).png"
+                alt="Sky High Bakery logo"><span>Sky High Bakery</span></a>
+        <p class="tagline">We put the bake in bakery. Come for the treats, stay for the vibes.</p>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="enquires.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a aria-current="page" href="contact.html">Contact</a></li>
                 <li><a href="products.html">Products</a></li>
             </ul>
         </nav>
-
     </header>
-
-    <main>
-
-        <h2>Contact Sky High</h2>
-
-        <p>
-            Got questions, need some information, or just want to say hi?
-            Here's where you can find us.
-        </p>
-
-        <div class="container">
-
-            <div>
-                <h3>Give Us a Call</h3>
-                <p>073 241 9175</p>
-            </div>
-
-            <div>
-                <h3>📧 Send Us an Email</h3>
-                <p>skyhighbakery@gmail.com</p>
-            </div>
-
-            <div>
-                <h3>📍 Find Us</h3>
-                <p>Pretoria, South Africa</p>
-            </div>
-
+    <main class="section-wrap">
+        <section class="page-heading">
+            <p class="eyebrow">We’re listening</p>
+            <h1>Contact Sky High</h1>
+            <p>Got a question, some feedback, or just want to say hi? Send us a message.</p>
+        </section>
+        <div class="contact-grid">
+            <section class="contact-details">
+                <h2>Find us</h2>
+                <p><strong>Phone:</strong> <a href="tel:+27732419175">073 241 9175</a></p>
+                <p><strong>Email:</strong> <a href="mailto:skyhighbakery01@gmail.com">skyhighbakery01@gmail.com</a></p>
+                <p><strong>Location:</strong> Pretoria, South Africa</p>
+                <h3>Opening hours</h3>
+                <p>Monday–Friday: 09:00–17:00<br>Saturday: 10:00–18:00<br>Sunday: 09:00–15:00</p>
+                <p class="small-note">The location and contact details are fictional examples for this student project.
+                </p>
+            </section>
+            <section class="form-section">
+                <h2>Send a general message</h2>
+                <p>After validation, your message is placed into an email draft addressed to the bakery. Your email app
+                    must be configured to send it.</p>
+                <form id="contactForm" class="site-form" action="mailto:skyhighbakery@gmail.com" method="post"
+                    enctype="text/plain">
+                    <label for="contactName">Full name</label><input id="contactName" name="name" type="text"
+                        minlength="2" maxlength="60" autocomplete="name" required>
+                    <label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email"
+                        autocomplete="email" required>
+                    <label for="contactPhone">Phone number (optional)</label><input id="contactPhone" name="phone"
+                        type="tel" pattern="[+]?[0-9 ()-]{7,20}" autocomplete="tel" placeholder="e.g. 073 000 0000">
+                    <label for="messageType">Message type</label><select id="messageType" name="messageType" required>
+                        <option value="">Choose a message type</option>
+                        <option>General question</option>
+                        <option>Feedback</option>
+                        <option>Website issue</option>
+                        <option>Other</option>
+                    </select>
+                    <label for="contactMessage">Your message</label><textarea id="contactMessage" name="message"
+                        rows="6" minlength="10" maxlength="1000" placeholder="Write your message here..."
+                        required></textarea>
+                    <button class="button-link" type="submit">Prepare email</button>
+                    <p class="form-message" id="contactResponse" aria-live="polite"></p>
+                </form>
+            </section>
         </div>
+        <section class="location">
+            <h2>Find Us</h2>
+            <p>Visit us at our location.</p>
 
-        <h2>Opening Hours</h2>
-
-        <p>
-            Monday - Friday: 09:00 - 17:00
-            <br>
-            Saturday: 10:00 - 18:00
-            <br>
-            Sunday: 09:00 - 15:00
-        </p>
-
-        <h2>Come Say Hi 👋</h2>
-
-        <p>
-            Don't be a stranger. Whether you're looking for some tasty
-            treats or just want to know more about Sky High Bakery,
-            we're always happy to hear from you.
-        </p>
-
+            <!-- Google Maps -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.6845072485585!2d28.18761327518259!3d-25.74794487736044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561eb88fde125%3A0xa6b2b426ca41034!2sRosebank%20College%20Pretoria%20Campus!5e0!3m2!1sen!2sza!4v1793617678100!5m2!1sen!2sza"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
     </main>
-
+    <footer>
+        <p>© <span class="current-year">2026</span> Sky High Bakery · Pretoria, South Africa</p>
+        <p><a href="enquires.html">Make an enquiry</a> · <a href="sitemap.xml">Sitemap</a></p>
+    </footer>
 </body>
 
 </html>
-```
